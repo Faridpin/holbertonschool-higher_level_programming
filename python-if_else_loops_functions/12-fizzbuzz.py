@@ -1,12 +1,12 @@
 #!/usr/bin/python3
-def fizzbuzz(a):
-    if a % 15 == 0:
-        print("FizzBuzz", end=" ")
-    elif a % 5 == 0:
-        print("Buzz", end=" ")
-    elif a % 3 == 0:
-        print("Fizz", end=" ")
-    else:
-        print(a, end=" ")
-for i in range (1,101):
-    fizzbuzz(i)
+def fizzbuzz():
+    for i in range (1,101):
+        if i % 15 == 0:
+            print("FizzBuzz", end=" ")
+        elif i % 5 == 0:
+            print("Buzz", end=" ")
+        elif i % 3 == 0:
+            print("Fizz", end=" ")
+        else:
+            print(i, end=" ")
+fizzbuzz()
