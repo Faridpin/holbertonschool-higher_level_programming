@@ -5,4 +5,4 @@ def print_last_digit(number):
         return (number % 10)
     else:
         print (-(abs(number) % 10), end="")
-        retun (number %10)
+        return (number %10)
