@@ -7,4 +7,4 @@ def pow(a, b):
     else:
         for i in range (abs(b)):
             c /= a
-    return format(c, ".21g")
+    return c
