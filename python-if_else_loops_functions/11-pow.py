@@ -8,4 +8,3 @@ def pow(a, b):
         for i in range (0, abs(b)):
             c /= a
     print(c)
-pow(2, -2)
