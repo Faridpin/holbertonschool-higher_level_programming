@@ -2,9 +2,9 @@
 def pow(a, b):
     c = 1
     if b>0:
-        for i in range (0, b):
+        for i in range (b):
             c *= a
     else:
-        for i in range (0, abs(b)):
+        for i in range (abs(b)):
             c /= a
-    return c
+    return format(c, ".21g")
