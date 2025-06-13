@@ -1,9 +1,9 @@
 #!/usr/bin/python3
-for i in range (0,98):
-    print(f"{i} = 0x", end="")
-    if i // 16 !=0:
-        print(i//10, end="")
-    if i%16<10:
-        print(i%10)
-    else:
-        print(chr(i%10+97))
+print("{}".format('\n'.join(f"{i} = 0x{i:x}" for i in range(99))))
+
+#for i in range (0,98):
+#    print(i," = 0x", i//16 if i !=  0 else print(i), end="")
+#    if i%16<10:
+#        print(i%10)
+#    else:
+#        print(chr(i%10+97))
