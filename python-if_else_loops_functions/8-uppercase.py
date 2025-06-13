@@ -2,9 +2,9 @@
 def uppercase(str):
     result = ""
     for i in (str):
-        if "a" <= i <= "z":
+        if ord("a") <= ord(i) <= ord("z"):
             result += chr(ord(i) - 32)
         else:
             result += i
-            print("{}".format(result))
+    print("{}".format(result))
 uppercase("holberton")
