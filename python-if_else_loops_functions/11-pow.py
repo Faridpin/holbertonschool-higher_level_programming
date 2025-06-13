@@ -7,4 +7,4 @@ def pow(a, b):
     else:
         for i in range (0, abs(b)):
             c /= a
-    print(c)
+    return c
