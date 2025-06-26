@@ -3,4 +3,5 @@
 
 
 def Rectangle():
+    ''' Rectangle class '''
     pass
