@@ -2,6 +2,6 @@
 ''' This file defines a rectangle '''
 
 
-def Rectangle():
+class Rectangle:
     ''' Rectangle class '''
     pass
