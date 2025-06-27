@@ -1,14 +1,15 @@
 #!/usr/bin/python3
-''' area method with exception '''
+"""This module has a class"""
 
 
 class BaseGeometry:
-    ''' "BaseGeometry" class'''
+    """This is a class."""
     def area(self):
         raise Exception("area() is not implemented")
 
     def integer_validator(self, name, value):
-        if not isinstance(value, int):
-            raise TypeError("{} must be an integer".format(name))
-        if value <= 0:
-            raise ValueError("{} must be greater than 0".format(name))
+        """Validates integers."""
+        if type(value) is not int or isinstance(value, bool):
+            raise TypeError(f"{name} must be an integer")
+        elif value <= 0:
+            raise ValueError(f"{name} must be greater than 0")
