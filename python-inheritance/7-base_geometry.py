@@ -1,15 +1,19 @@
 #!/usr/bin/python3
-"""This module has a class"""
+''' 7 '''
 
 
 class BaseGeometry:
-    """This is a class."""
+    '''BaseGeometry class'''
     def area(self):
         raise Exception("area() is not implemented")
 
     def integer_validator(self, name, value):
-        """Validates integers."""
-        if type(value) is not int or isinstance(value, bool):
+        if type(value) is not int:
             raise TypeError(f"{name} must be an integer")
-        elif value <= 0:
+        if value <= 0:
             raise ValueError(f"{name} must be greater than 0")
+
+
+if __name__ == "__main__":
+    import doctest
+    doctest.testmod()
