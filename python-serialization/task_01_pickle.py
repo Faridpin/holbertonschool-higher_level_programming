@@ -20,7 +20,10 @@ class CustomObject:
 
     @classmethod
     def deserialize(cls, filename):
-        with open(filename, "rb") as f:
-            obj = pickle.load(f)
-            if isinstance(obj, cls):
-                return obj
+        try:
+            with open(filename, "rb") as f:
+                obj = pickle.load(f)
+                if isinstance(obj, cls):
+                    return obj
+        except Exception:
+            return None
