@@ -1,11 +1,13 @@
 #!/usr/bin/python3
 import pickle
+
+
 class CustomObject:
     ''' Object '''
     def __init__(self, name, age, is_student):
         self.name = name
         self.age = age
-        self.is_student = student
+        self.is_student = is_student
 
     def display(self):
         print(f"Name: {self.name}")
@@ -13,11 +15,12 @@ class CustomObject:
         print(f"Is Student: {self.is_student}")
 
     def serialize(self, filename):
-    ''' seriallization '''
         with open(filename, "wb") as file:
-            return pickle.dump(data, file)
+            return pickle.dump(self, file)
 
     @classmethod
     def deserialize(cls, filename):
-        with open(filename, "rb") as file:
-            return pickle.load(
+        with open(filename, "rb") as f:
+            obj = pickle.load(f)
+            if isinstance(obj, cls):
+                return obj
