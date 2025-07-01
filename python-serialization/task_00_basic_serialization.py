@@ -14,4 +14,4 @@ def load_and_deserialize(filename):
     ''' deserialization '''
 
     with open(filename, "rb") as file:
-        return pickle.load(file)
+        return pickle.loads(file)
