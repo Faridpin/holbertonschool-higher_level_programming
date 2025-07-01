@@ -1,7 +1,5 @@
 #!/usr/bin/python3
 ''' Basic seriallization '''
-
-
 import pickle
 
 
