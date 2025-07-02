@@ -1,4 +1,4 @@
 -- CREATE TABLE
-CREATE TABLE first_table IF NOT EXISTS(
+CREATE TABLE IF NOT EXISTS first_table (
 	id int,
 	name VARCHAR(256))
