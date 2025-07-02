@@ -1,3 +1,3 @@
 -- All scores
 SELECT * FROM second_table
-ORDER BY score, name;
+ORDER BY score DESC;
