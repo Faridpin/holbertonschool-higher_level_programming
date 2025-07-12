@@ -1,4 +1,4 @@
-#!/usr/bin/enb python3
+#!/usr/bin/python3
 ''' open a website '''
 
 
