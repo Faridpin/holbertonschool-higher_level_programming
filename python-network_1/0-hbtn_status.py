@@ -5,7 +5,7 @@
 import urllib.request
 
 
-def fetch_status(url):
+def fetch_status(url = "https://intranet.hbtn.io/status"):
     ''' function '''
     with urllib.request.urlopen(url) as response:
         body = response.read()
